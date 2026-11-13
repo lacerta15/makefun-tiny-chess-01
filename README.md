@@ -15,3 +15,10 @@ machine's speed, as the rules require for the replayed final.
 
 No network access beyond the competition's env, no model calls, no files
 read besides `main.py`'s own bytes.
+
+## Search budget
+
+Iterative deepening stops after a fixed node count (22,000 by default), never
+after a wall-clock deadline: the house's node-capped engines score the same
+way, and it is what keeps a trial's live run and its replay reaching the
+same moves regardless of which machine (or how loaded it is) ran each pass.
